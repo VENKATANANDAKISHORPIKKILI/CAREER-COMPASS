@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Interest Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Eyes -->
+  <div class="eyes-container">
+    <div class="eye"><div class="pupil"></div></div>
+    <div class="eye"><div class="pupil"></div></div>
+  </div>
+
+  <!-- Quiz -->
+  <div class="container">
+    <h1>Career Interest Quiz</h1>
+
+    <div class="question">
+      <p>1. Do you enjoy working with computers and software?</p>
+      <label><input type="radio" name="q0" value="it"> Yes</label>
+      <label><input type="radio" name="q0" value="no"> No</label>
+    </div>
+
+    <div class="question">
+      <p>2. Are you from an Electronics and Communication background?</p>
+      <label><input type="radio" name="q1" value="ece"> Yes</label>
+      <label><input type="radio" name="q1" value="no"> No</label>
+    </div>
+
+    <div class="question">
+      <p>3. Are you interested in construction or civil projects?</p>
+      <label><input type="radio" name="q2" value="civil"> Yes</label>
+      <label><input type="radio" name="q2" value="no"> No</label>
+    </div>
+
+    <div class="question">
+      <p>4. Are you from a Mechanical background?</p>
+      <label><input type="radio" name="q3" value="mech"> Yes</label>
+      <label><input type="radio" name="q3" value="no"> No</label>
+    </div>
+
+    <div class="question">
+      <p>5. Do you enjoy designing or building systems?</p>
+      <label><input type="radio" name="q4" value="it"> Yes</label>
+      <label><input type="radio" name="q4" value="no"> No</label>
+    </div>
+
+    <button onclick="submitQuiz()">Submit</button>
+    <div id="result"></div>
+    <div id="details-container"></div>
+    <p class="thanks-msg">🎉 Thank you for reaching out to this website!</p>
+  </div>
+
+  <audio id="submitSound" src="https://www.soundjay.com/buttons/sounds/button-29.mp3" preload="auto"></audio>
+  <audio id="clickSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
